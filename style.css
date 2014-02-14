@@ -12,27 +12,34 @@
 #naudin
 {
   position: absolute;
-  top: 250px;
-  left: 615px;
+  top: 150px;
+  left: 490px;
 }
 
 #guerton
 {
   position: absolute;
-  top: 418px;
-  left: 420px;
+  top: 270px;
+  left: 335px;
 }
 
 #eti
 {
   position: absolute;
-  top: 590px;
-  left: 685px;
+  top: 395px;
+  left: 500px;
+}
+
+#girod-sisa
+{
+  position: absolute;
+  top: 500px;
+  left: 640px;
 }
 
 #contact
 {
   position: absolute;
-  top: 851px;
-  left: 767px;
+  top: 607px;
+  left: 640px;
 }
