@@ -1,0 +1,17 @@
+- StaticPage.asc(:menu_rank).each do |page|
+  %li{class: current_page?(static_page_path(page.slug)) && 'active'}
+    = link_to page.title, static_page_path(page.slug)
+
+- if user_signed_in?
+  %li.dropdown
+    %a.dropdown-toggle{href: '#', 'data-toggle' => 'dropdown'}
+      Admin
+      %b.caret
+    %ul.dropdown-menu
+      %li{class: current_page?(static_pages_path) && 'active'}
+        = link_to 'Pages', static_pages_path
+      %li{class: current_page?(users_path) && 'active'}
+        = link_to 'Users', users_path
+      %li{class: current_page?(edit_user_registration_path) && 'active'}
+        = link_to 'Edit account', edit_user_registration_path
+      %li= link_to 'Logout', destroy_user_session_path, :method=>'delete'

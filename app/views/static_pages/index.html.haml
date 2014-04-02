@@ -1,0 +1,18 @@
+%h1 Listing static pages
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @pages.each do |page|
+    %tr
+      %td= page.title
+      %td= link_to 'Show', static_page_path(page.slug)
+      %td= link_to 'Edit', edit_static_page_path(page.slug)
+      %td= link_to 'Destroy', static_page_path(page.slug), :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Page', new_static_page_path

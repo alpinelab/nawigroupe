@@ -1,0 +1,8 @@
+= simple_form_for(@page, :html => { :class => 'form-inline' },  defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } } ) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :title
+    = f.input :slug
+    = f.input :menu_rank
+  .form-actions
+    = f.button :submit

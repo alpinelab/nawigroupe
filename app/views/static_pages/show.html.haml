@@ -1,0 +1,8 @@
+%h3= @page.title
+
+%p#notice= notice
+
+- if user_signed_in?
+	= link_to 'Edit', edit_static_page_path(@page.slug)
+	\|
+	= link_to 'Back', static_pages_path

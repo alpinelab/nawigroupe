@@ -1,0 +1,7 @@
+%h1 Editing page
+
+= render 'form'
+
+= link_to 'Show', static_page_path(@page.slug)
+\|
+= link_to 'Back', static_pages_path
