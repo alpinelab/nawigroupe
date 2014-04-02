@@ -17,3 +17,9 @@ rerun.txt
 pickle-email-*.html
 .project
 config/initializers/secret_token.rb
+.env
+.foreman
+.ruby-version
+.keep
+*.sublime-project
+*.sublime-workspace
